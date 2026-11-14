@@ -1,0 +1,401 @@
+[
+  [
+    "R01",
+    "Google Search Central",
+    "Cómo funciona Google Search",
+    "https://developers.google.com/search/docs/fundamentals/how-search-works",
+    "Etapas de descubrimiento, rastreo, indexación y resultados."
+  ],
+  [
+    "R02",
+    "Google Search Central",
+    "SEO Starter Guide",
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "Fundamentos de contenido, enlaces y presentación en búsqueda."
+  ],
+  [
+    "R03",
+    "Google Search Central",
+    "Creating helpful reliable people first content",
+    "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "Preguntas de calidad y contexto del marco E E A T."
+  ],
+  [
+    "R04",
+    "Google Search Central",
+    "Spam policies for Google web search",
+    "https://developers.google.com/search/docs/essentials/spam-policies",
+    "Prácticas manipulativas, enlaces y contenido a escala."
+  ],
+  [
+    "R05",
+    "Google Search Central",
+    "Introduction to robots txt",
+    "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+    "Alcance y límites de reglas de rastreo."
+  ],
+  [
+    "R06",
+    "Google Search Central",
+    "Specify a canonical URL",
+    "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "Señales para versiones representativas de contenido."
+  ],
+  [
+    "R07",
+    "Google Search Central",
+    "Redirects and Google Search",
+    "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+    "Tratamiento de redirecciones temporales y permanentes."
+  ],
+  [
+    "R08",
+    "Google Search Central",
+    "Sitemaps overview",
+    "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+    "Propósito y límites de los sitemaps."
+  ],
+  [
+    "R09",
+    "Google Search Central",
+    "Understand JavaScript SEO basics",
+    "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+    "Renderizado, enlaces y dependencias de JavaScript."
+  ],
+  [
+    "R10",
+    "Google Search Central",
+    "General structured data guidelines",
+    "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+    "Calidad, acceso y elegibilidad de datos estructurados."
+  ],
+  [
+    "R11",
+    "Google Business Profile",
+    "Tips to improve your local ranking",
+    "https://support.google.com/business/answer/7091?hl=en",
+    "Factores locales y datos completos de negocio."
+  ],
+  [
+    "R12",
+    "Google Business Profile",
+    "Guidelines for representing your business",
+    "https://support.google.com/business/answer/3038177?hl=en",
+    "Representación, elegibilidad y ubicaciones."
+  ],
+  [
+    "R13",
+    "Google Search Central",
+    "Local business structured data",
+    "https://developers.google.com/search/docs/appearance/structured-data/local-business",
+    "Requisitos de información local para funciones compatibles."
+  ],
+  [
+    "R14",
+    "Google Search Central",
+    "Review snippet structured data",
+    "https://developers.google.com/search/docs/appearance/structured-data/review-snippet",
+    "Reseñas y restricciones autorreferenciales."
+  ],
+  [
+    "R15",
+    "web.dev",
+    "Web Vitals",
+    "https://web.dev/articles/vitals",
+    "Métricas, umbrales y evaluación del percentil 75."
+  ],
+  [
+    "R16",
+    "web.dev",
+    "Why lab and field data can be different",
+    "https://web.dev/articles/lab-and-field-data-differences",
+    "Diferencias de medición en laboratorio y uso real."
+  ],
+  [
+    "R17",
+    "W3C WAI",
+    "How to meet WCAG 2 2",
+    "https://www.w3.org/WAI/WCAG22/quickref/",
+    "Referencia de criterios y técnicas de accesibilidad."
+  ],
+  [
+    "R18",
+    "OWASP Foundation",
+    "OWASP Top 10",
+    "https://owasp.org/projects/top-ten",
+    "Entrada al proyecto y sus versiones vigentes."
+  ],
+  [
+    "R19",
+    "MDN Web Docs",
+    "What is a domain name",
+    "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name",
+    "Nombres de dominio y funcionamiento básico."
+  ],
+  [
+    "R20",
+    "MDN Web Docs",
+    "HTTP caching",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching",
+    "Reutilización de respuestas y controles de caché."
+  ],
+  [
+    "R21",
+    "Google Search Central",
+    "AI features and your website",
+    "https://developers.google.com/search/docs/appearance/ai-features",
+    "Elegibilidad, controles y medición de funciones de IA."
+  ],
+  [
+    "R22",
+    "OpenAI Developers",
+    "Overview of OpenAI crawlers",
+    "https://developers.openai.com/api/docs/bots",
+    "Diferencias entre agentes de búsqueda, entrenamiento y usuario."
+  ],
+  [
+    "R23",
+    "Aggarwal y colaboradores",
+    "GEO Generative Engine Optimization",
+    "https://arxiv.org/abs/2311.09735",
+    "Investigación original y alcance experimental. Versión revisada en 2024."
+  ],
+  [
+    "R24",
+    "Jeremy Howard",
+    "The llms txt proposal",
+    "https://llmstxt.org/",
+    "Propuesta de información orientada a agentes y su evolución."
+  ],
+  [
+    "R25",
+    "IndexNow",
+    "Protocol documentation",
+    "https://www.indexnow.org/documentation",
+    "Avisos de cambios para motores participantes."
+  ],
+  [
+    "R26",
+    "Microsoft Bing",
+    "Introducing AI Performance in Bing Webmaster Tools",
+    "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/",
+    "Alcance inicial de métricas de citas y páginas. Publicado el 10 de febrero de 2026."
+  ],
+  [
+    "R27",
+    "Google Analytics Help",
+    "Set up Analytics for a website or app",
+    "https://support.google.com/analytics/answer/9304153?hl=en",
+    "Cuenta, propiedad, flujo y configuración inicial."
+  ],
+  [
+    "R28",
+    "Google Analytics Developers",
+    "Set up events",
+    "https://developers.google.com/analytics/devguides/collection/ga4/events",
+    "Tipos de evento e instrumentación."
+  ],
+  [
+    "R29",
+    "Google Analytics Developers",
+    "Recommended events reference",
+    "https://developers.google.com/analytics/devguides/collection/ga4/reference/events",
+    "Nombres recomendados, condiciones y parámetros."
+  ],
+  [
+    "R30",
+    "Google Analytics Developers",
+    "Measure ecommerce",
+    "https://developers.google.com/analytics/devguides/collection/ga4/ecommerce",
+    "Eventos y datos de comercio electrónico."
+  ],
+  [
+    "R31",
+    "Google Tag Platform",
+    "The data layer",
+    "https://developers.google.com/tag-platform/tag-manager/datalayer",
+    "Mensajes de capa de datos y consumo por etiquetas."
+  ],
+  [
+    "R32",
+    "Google Tag Platform",
+    "Set up consent mode on websites",
+    "https://developers.google.com/tag-platform/security/guides/consent",
+    "Estados, orden y actualizaciones de consentimiento técnico."
+  ],
+  [
+    "R33",
+    "Google Analytics Help",
+    "Best practices to avoid sending PII",
+    "https://support.google.com/analytics/answer/6366371?hl=en-40",
+    "Prevención de información identificable en recogida de datos."
+  ],
+  [
+    "R34",
+    "Google Analytics Developers",
+    "Measurement Protocol overview",
+    "https://developers.google.com/analytics/devguides/collection/protocol/ga4",
+    "Complemento de eventos enviados desde servidor y otros contextos."
+  ],
+  [
+    "R35",
+    "Google Analytics Help",
+    "Collect campaign data with custom URLs",
+    "https://support.google.com/analytics/answer/10917952?hl=en",
+    "Parámetros de campaña y su función."
+  ],
+  [
+    "R36",
+    "Google Analytics Help",
+    "Reporting identity",
+    "https://support.google.com/analytics/answer/10976610?hl=en",
+    "Métodos de identidad y límites de observación."
+  ],
+  [
+    "R37",
+    "Google Search Central",
+    "How to use Search Console",
+    "https://developers.google.com/search/docs/monitor-debug/search-console-start",
+    "Primeros diagnósticos y observación en Search Console."
+  ],
+  [
+    "R38",
+    "Google Search Central",
+    "Ecommerce URL structure best practices",
+    "https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites",
+    "Rutas, parámetros y variantes de catálogo."
+  ],
+  [
+    "R39",
+    "Google Search Central",
+    "Localized versions of your pages",
+    "https://developers.google.com/search/docs/specialty/international/localized-versions",
+    "Alternativas por idioma y región."
+  ],
+  [
+    "R40",
+    "Google Search Central",
+    "Site moves with URL changes",
+    "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+    "Planificación y comprobación de migraciones."
+  ],
+  [
+    "R41",
+    "Google Analytics Help",
+    "Demo account",
+    "https://support.google.com/analytics/answer/6367342?hl=en",
+    "Acceso a datos de demostración de negocios reales."
+  ],
+  [
+    "R42",
+    "Lee Duong Akiba y Kashiwase en web.dev",
+    "Rakuten 24 Core Web Vitals case study",
+    "https://web.dev/case-studies/rakuten",
+    "Caso público de rendimiento y experimento comercial."
+  ],
+  [
+    "R43",
+    "Asamblea Nacional del Ecuador",
+    "Ley Orgánica de Protección de Datos Personales",
+    "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
+    "Texto legal alojado en un portal oficial. Revisar normativa posterior aplicable."
+  ],
+  [
+    "R44",
+    "SPDP Ecuador",
+    "Preguntas frecuentes",
+    "https://www.spdp.gob.ec/preguntas-frecuentes/",
+    "Entrada oficial para obligaciones y consultas de protección de datos."
+  ],
+  [
+    "R45",
+    "Meta en GitHub",
+    "Facebook Business SDK for NodeJS",
+    "https://github.com/facebook/facebook-nodejs-business-sdk",
+    "SDK oficial y contexto de acceso a APIs de negocio."
+  ],
+  [
+    "R46",
+    "Google Ads Help",
+    "About enhanced conversions",
+    "https://support.google.com/google-ads/answer/9888656?hl=en",
+    "Función y condiciones de conversiones mejoradas."
+  ],
+  [
+    "R47",
+    "Google Analytics Help",
+    "Get started with attribution",
+    "https://support.google.com/analytics/answer/10596866?hl=en",
+    "Asignación de crédito y modelos."
+  ],
+  [
+    "R48",
+    "Google Analytics Help",
+    "Create event scoped custom dimensions",
+    "https://support.google.com/analytics/answer/14239696?hl=en",
+    "Registro de parámetros para informes compatibles."
+  ],
+  [
+    "R49",
+    "Google Advertising Policies",
+    "Restricted targeting in personalized advertising",
+    "https://support.google.com/adspolicy/answer/143465?hl=en",
+    "Restricciones para categorías sensibles y uso de datos."
+  ],
+  [
+    "R50",
+    "Google Crawling Infrastructure",
+    "Google common crawlers",
+    "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+    "Agentes y controles de usos específicos."
+  ],
+  [
+    "R51",
+    "Google Analytics Help",
+    "HIPAA and Google Analytics",
+    "https://support.google.com/analytics/answer/13297105?hl=en",
+    "Políticas del producto sobre información sensible. La ley estadounidense no se traslada automáticamente a Ecuador."
+  ],
+  [
+    "R52",
+    "Schema org",
+    "Dentist",
+    "https://schema.org/Dentist",
+    "Tipo y propiedades del vocabulario."
+  ],
+  [
+    "R53",
+    "Google Search Central",
+    "Google Images best practices",
+    "https://developers.google.com/search/docs/appearance/google-images",
+    "Imágenes, contexto y descubrimiento."
+  ],
+  [
+    "R54",
+    "Google Search Central",
+    "Video SEO best practices",
+    "https://developers.google.com/search/docs/appearance/video",
+    "Páginas de video y requisitos de funciones."
+  ],
+  [
+    "R55",
+    "Google Search Central",
+    "Mobile first indexing best practices",
+    "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+    "Contenido y recursos en experiencia móvil."
+  ],
+  [
+    "R56",
+    "Google Search Central",
+    "Robots meta tags specifications",
+    "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
+    "Instrucciones de indexación y presentación."
+  ],
+  [
+    "R57",
+    "GOV UK",
+    "UK bank holidays",
+    "https://www.gov.uk/bank-holidays",
+    "Página pública para analizar organización de información por tarea."
+  ]
+]

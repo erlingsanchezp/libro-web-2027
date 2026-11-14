@@ -1,0 +1,11 @@
+{
+  "tipo": "datos completamente simulados para aprendizaje",
+  "moneda": "USD",
+  "alcance": "un mismo período didáctico con atribución definida por canal",
+  "canales": [
+    {"canal": "Búsqueda orgánica", "sesiones": 1200, "leads_validos": 60, "citas": 30, "clientes": 18, "ingresos": 1800, "publicidad": 0},
+    {"canal": "Búsqueda pagada", "sesiones": 800, "leads_validos": 80, "citas": 40, "clientes": 20, "ingresos": 2400, "publicidad": 600},
+    {"canal": "Social pagado", "sesiones": 1000, "leads_validos": 100, "citas": 30, "clientes": 12, "ingresos": 1440, "publicidad": 500},
+    {"canal": "Referencias", "sesiones": 300, "leads_validos": 15, "citas": 9, "clientes": 6, "ingresos": 720, "publicidad": 0}
+  ]
+}

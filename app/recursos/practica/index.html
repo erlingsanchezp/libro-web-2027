@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Práctica local de eventos y formularios</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#162b40;background:#f5f7fa;line-height:1.6}
+*{box-sizing:border-box}body{margin:0}main,header,footer{max-width:1100px;margin:auto;padding:1.5rem}
+header{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}nav{display:flex;gap:1rem;flex-wrap:wrap}
+a{color:#075f80}h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.2;max-width:22ch}h2{line-height:1.3}
+section{margin-bottom:2rem}p{max-width:78ch}.columns{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+form,.logarea{background:#fff;border:1px solid #d7e0e8;padding:1.25rem;border-radius:.4rem}
+label{display:block;font-weight:650;margin:.8rem 0 .25rem}select,button{font:inherit;padding:.65rem .85rem;border-radius:.3rem;min-height:44px}
+select{width:100%;border:1px solid #647789;background:#fff}button{background:#193c56;color:white;border:2px solid #193c56;cursor:pointer;margin:.4rem .4rem .4rem 0}
+button.secondary{color:#193c56;background:white}button:disabled{opacity:.6;cursor:wait}a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #bd226b;outline-offset:3px}
+.status{font-weight:600;min-height:3rem}.small{font-size:.9rem}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7fa;padding:.8rem;font-size:.82rem;max-height:32rem;overflow:auto}
+.skip{position:absolute;left:-10000px}.skip:focus{left:1rem;top:1rem;background:white;padding:.7rem}footer{font-size:.9rem}
+@media(max-width:760px){.columns{grid-template-columns:1fr}header{display:block}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+<header><strong>Tienda Demo · Cuaderno web</strong><nav aria-label="Principal"><a href="#oferta">Oferta de práctica</a><a href="#solicitud">Formulario</a><a href="#registro">Bitácora</a></nav></header>
+<main id="contenido">
+<section id="oferta"><p class="small">RECURSO EDUCATIVO DEL LIBRO SEO GEO Y TRACKING PARA 2027</p><h1>Comprende qué ocurre antes de contar una conversión</h1><p>Esta tienda de instrumentos es ficticia. Puedes probar contacto, errores y aceptación de una solicitud sin introducir datos personales. No se envía información, no se abre WhatsApp y no se reserva ningún servicio real.</p><button id="contact">Probar contacto simulado</button><p id="contactStatus" role="status" aria-live="polite"></p></section>
+<section aria-labelledby="privacyTitle"><h2 id="privacyTitle">Registro de analítica de práctica</h2><p>Está desactivado al comenzar. La elección solo controla esta bitácora en memoria; no es una plataforma de consentimiento para producción. El formulario funciona en ambos estados.</p><button id="allow">Permitir registro de práctica</button><button class="secondary" id="deny">No registrar</button><p id="consentStatus" role="status" aria-live="polite">Estado actual: sin registro analítico de práctica.</p></section>
+<div class="columns"><section id="solicitud"><h2>Simular una solicitud</h2><form id="form"><p class="small">Usa solo opciones ficticias. La aceptación es una simulación local y no una respuesta de un servidor.</p><label for="category">Tema de la solicitud de práctica</label><select id="category" required><option value="">Elige una opción</option value="guitarra">Guitarra clásica</option><option value="accesorios">Accesorios</option></select><label for="scenario">Resultado que quieres ensayar</label><select id="scenario"><option value="error">Error simulado</option><option value="success">Aceptación simulada</option></select><button id="submit" type="submit">Probar envío simulado</button><button class="secondary" id="resetOperation" type="button">Nueva operación</button><p id="formStatus" class="status" role="status" aria-live="polite">Selecciona un tema y un resultado.</p></form></section>
+<section id="registro"><h2>Bitácora local de eventos</h2><div class="logarea"><p id="counter" aria-live="polite">0 eventos analíticos de práctica.</p><button class="secondary" id="clear">Vaciar bitácora</button><pre id="log" aria-label="Eventos registrados">Sin eventos. Realiza las pruebas del laboratorio 5.</pre></div></section></div>
+<section><h2>Cómo interpretar la práctica</h2><p>Un clic produce contact_click cuando permites registro. Un error no produce generate_lead. Una aceptación produce un éxito por operación, si el registro está permitido en ese momento. Para otra solicitud usa Nueva operación.</p><p>El control contra doble clic solo existe en este navegador. En producción el backend debe guardar la solicitud y aplicar idempotencia. Un identificador propio no activa deduplicación universal en Analytics ni en otras plataformas.</p></section>
+</main><footer>Todo se reinicia al recargar. No hay conexión con Google Analytics, Meta, CRM ni servicios externos.</footer>
+<script>
+'use strict';
+let allowed=false,pending=false,completed=false,operation=1;
+const records=[];
+const el=id=>document.getElementById(id);
+function record(name,params){
+  if(!allowed)return;
+  records.push({event:name,...params,practice_operation:operation});
+  el('counter').textContent=records.length+' eventos analíticos de práctica.';
+  el('log').textContent=records.map(x=>JSON.stringify(x,null,2)).join('\n\n');
+}
+el('allow').addEventListener('click',()=>{allowed=true;el('consentStatus').textContent='Estado actual: registro de práctica permitido. Solo en memoria.';});
+el('deny').addEventListener('click',()=>{allowed=false;el('consentStatus').textContent='Estado actual: sin nuevos registros. Puedes vaciar los anteriores.';});
+el('contact').addEventListener('click',()=>{el('contactStatus').textContent='Contacto simulado abierto. No se ha enviado un mensaje real.';record('contact_click',{contact_channel:'whatsapp_simulado',placement:'product_main'});});
+el('form').addEventListener('submit',async e=>{
+  e.preventDefault();
+  if(pending)return;
+  if(completed){el('formStatus').textContent='Esta operación ya fue aceptada. Usa Nueva operación para otra solicitud.';return;}
+  if(!el('form').reportValidity())return;
+  pending=true;el('submit').disabled=true;el('resetOperation').disabled=true;
+  el('formStatus').textContent='Procesando una simulación local…';
+  const scenario=el('scenario').value;
+  try{
+    await new Promise(resolve=>setTimeout(resolve,500));
+    if(scenario==='error'){el('formStatus').textContent='Error simulado: la solicitud no fue aceptada. No se registra un lead.';return;}
+    completed=true;
+    el('formStatus').textContent='Aceptación simulada. No se envió información ni existe una reserva real.';
+    record('generate_lead',{form_type:'consulta_demo',placement:'form_main'});
+  } finally {pending=false;el('submit').disabled=false;el('resetOperation').disabled=false;}
+});
+el('resetOperation').addEventListener('click',()=>{if(pending)return;operation+=1;completed=false;el('formStatus').textContent='Nueva operación de práctica. Puedes probar otro resultado.';});
+el('clear').addEventListener('click',()=>{records.length=0;el('counter').textContent='0 eventos analíticos de práctica.';el('log').textContent='Sin eventos. La operación actual conserva su estado.';});
+</script>
+</body>
+</html>
